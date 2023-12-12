@@ -18,8 +18,8 @@ WORKDIR /app
 RUN wget https://github.com/Gkiokan/hb-store-cdn-cli-server/archive/refs/heads/master.zip && \
     unzip master.zip && \
     rm master.zip && \
-    mv hb-store-cdn-cli-server-main/* . && \
-    rm -r hb-store-cdn-cli-server-main
+    mv hb-store-cdn-cli-server-master/* . && \
+    rm -r hb-store-cdn-cli-server-master
 
 # Download the binary
 RUN wget https://github.com/Gkiokan/hb-store-cdn-cli-server/releases/download/v1.3.0/hb-store-cdn-cli-server-linux
