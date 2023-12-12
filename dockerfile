@@ -15,9 +15,9 @@ RUN apt-get update && apt-get install -y \
 WORKDIR /app
 
 # Download the repository
-RUN wget https://github.com/Gkiokan/hb-store-cdn-cli-server/archive/refs/heads/main.zip && \
-    unzip main.zip && \
-    rm main.zip && \
+RUN wget https://github.com/Gkiokan/hb-store-cdn-cli-server/archive/refs/heads/master.zip && \
+    unzip master.zip && \
+    rm master.zip && \
     mv hb-store-cdn-cli-server-main/* . && \
     rm -r hb-store-cdn-cli-server-main
 
