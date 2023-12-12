@@ -29,8 +29,11 @@ RUN chmod +x ./hb-store-cli-server-linux
 # Create a config.ini file
 RUN echo "host=$HOST" > config.ini && \
     echo "port=$PORT" >> config.ini && \
-    echo "basePath=$BASE_PATH" >> config.ini && \
+    echo "basePath=/pkg" >> config.ini && \
     echo "binVersion=4.5" >> config.ini
+
+# Expose the /assets folder as a volume
+VOLUME ["/assets"]
 
 # Run the script
 CMD ["./hb-store-cli-server-linux", "start"]
