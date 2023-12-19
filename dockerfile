@@ -22,7 +22,7 @@ RUN wget https://github.com/Gkiokan/hb-store-cdn-cli-server/archive/refs/heads/m
     rm -r hb-store-cdn-cli-server-master
 
 # Download the binary
-RUN wget https://github.com/Gkiokan/hb-store-cdn-cli-server/releases/download/v1.3.0/hb-store-cdn-cli-server-linux
+RUN wget https://github.com/Gkiokan/hb-store-cdn-cli-server/releases/download/v1.4.1/hb-store-cdn-cli-server-linux
 RUN mv hb-store-cdn-cli-server-linux ./hb-store-cli-server-linux
 RUN chmod +x ./hb-store-cli-server-linux
 
